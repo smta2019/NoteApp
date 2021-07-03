@@ -4,19 +4,23 @@ PODS:
   - Realm/Headers (10.1.4)
   - RealmSwift (10.1.4):
     - Realm (= 10.1.4)
+  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - RealmSwift (= 10.1.4)
+  - TTTAttributedLabel
 
 SPEC REPOS:
   trunk:
     - Realm
     - RealmSwift
+    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
   RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 9646be09b4904f9da6623b3248c61d6edcd421ae
+PODFILE CHECKSUM: b68f34c747644e476255b926ecc1a4dd81704a18
 
 COCOAPODS: 1.10.1

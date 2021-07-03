@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04A97D5268CCE770061FD5A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A97D4268CCE770061FD5A /* Note.swift */; };
+		E04A97DD268CE0E50061FD5A /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A97DC268CE0E50061FD5A /* DisplayViewController.swift */; };
 		E05C7EA7268CC32100EBA12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C7EA6268CC32100EBA12B /* AppDelegate.swift */; };
 		E05C7EA9268CC32100EBA12B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C7EA8268CC32100EBA12B /* SceneDelegate.swift */; };
 		E05C7EAB268CC32100EBA12B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C7EAA268CC32100EBA12B /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 		5ECA25F043C5BC0BB70A1151 /* Pods_NoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91051E9E41F6B885AA179468 /* Pods-NoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.release.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.release.xcconfig"; sourceTree = "<group>"; };
 		B06BFC8765251AE81047D3A6 /* Pods-NoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.debug.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E04A97D4268CCE770061FD5A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E04A97DC268CE0E50061FD5A /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		E05C7EA3268CC32100EBA12B /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05C7EA6268CC32100EBA12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E05C7EA8268CC32100EBA12B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,6 @@
 				B06BFC8765251AE81047D3A6 /* Pods-NoteApp.debug.xcconfig */,
 				91051E9E41F6B885AA179468 /* Pods-NoteApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,7 +89,9 @@
 				E05C7EA6268CC32100EBA12B /* AppDelegate.swift */,
 				E05C7EA8268CC32100EBA12B /* SceneDelegate.swift */,
 				E05C7EAA268CC32100EBA12B /* ViewController.swift */,
+				E04A97D4268CCE770061FD5A /* Note.swift */,
 				E05C7EBC268CC66C00EBA12B /* InputViewController.swift */,
+				E04A97DC268CE0E50061FD5A /* DisplayViewController.swift */,
 				E05C7EAC268CC32100EBA12B /* Main.storyboard */,
 				E05C7EAF268CC32200EBA12B /* Assets.xcassets */,
 				E05C7EB1268CC32200EBA12B /* LaunchScreen.storyboard */,
@@ -209,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04A97D5268CCE770061FD5A /* Note.swift in Sources */,
+				E04A97DD268CE0E50061FD5A /* DisplayViewController.swift in Sources */,
 				E05C7EAB268CC32100EBA12B /* ViewController.swift in Sources */,
 				E05C7EA7268CC32100EBA12B /* AppDelegate.swift in Sources */,
 				E05C7EA9268CC32100EBA12B /* SceneDelegate.swift in Sources */,

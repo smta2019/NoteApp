@@ -7,5 +7,6 @@ target 'NoteApp' do
 
   # Pods for NoteApp
   pod 'RealmSwift','10.1.4'
+  pod 'TTTAttributedLabel'
 
 end

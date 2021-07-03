@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="タイトル" borderStyle="roundedRect" placeholder="タイトル" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiU-zl-1hx">
-                                <rect key="frame" x="10" y="88" width="394" height="40"/>
+                                <rect key="frame" x="10" y="98" width="394" height="40"/>
                                 <color key="backgroundColor" red="0.89352054195804198" green="0.539253715034965" blue="0.78324409965034969" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6MX-vl-kKa"/>
@@ -91,7 +91,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="本文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hs7-4C-5en">
-                                <rect key="frame" x="10" y="138" width="394" height="694"/>
+                                <rect key="frame" x="10" y="148" width="394" height="684"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -105,6 +105,7 @@
                                         <state key="normal" title="縦書き"/>
                                         <connections>
                                             <action selector="verticalButton:" destination="Agg-jV-cmZ" eventType="touchUpInside" id="grA-Yc-Nls"/>
+                                            <segue destination="vgJ-l5-sRx" kind="show" identifier="displaySegue" id="oQc-DY-aqg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFC-vw-X3Y">
@@ -126,7 +127,7 @@
                         <constraints>
                             <constraint firstItem="rMi-Ay-ede" firstAttribute="bottom" secondItem="BbK-5u-15R" secondAttribute="bottom" constant="10" id="Ahl-8I-p54"/>
                             <constraint firstItem="BbK-5u-15R" firstAttribute="trailing" secondItem="rMi-Ay-ede" secondAttribute="trailing" constant="10" id="GpJ-g7-iKK"/>
-                            <constraint firstItem="OiU-zl-1hx" firstAttribute="top" secondItem="BbK-5u-15R" secondAttribute="top" id="JpC-Kv-sGE"/>
+                            <constraint firstItem="OiU-zl-1hx" firstAttribute="top" secondItem="BbK-5u-15R" secondAttribute="top" constant="10" id="JpC-Kv-sGE"/>
                             <constraint firstItem="BbK-5u-15R" firstAttribute="trailing" secondItem="OiU-zl-1hx" secondAttribute="trailing" constant="10" id="JpC-V1-WJs"/>
                             <constraint firstItem="BbK-5u-15R" firstAttribute="trailing" secondItem="Hs7-4C-5en" secondAttribute="trailing" constant="10" id="Lgs-Be-nBy"/>
                             <constraint firstItem="OiU-zl-1hx" firstAttribute="leading" secondItem="BbK-5u-15R" secondAttribute="leading" constant="10" id="Vdm-fW-hnm"/>
@@ -145,6 +146,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfI-4A-sjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1588.4057971014495" y="76.339285714285708"/>
+        </scene>
+        <!--Display View Controller-->
+        <scene sceneID="qpw-Eb-6Yy">
+            <objects>
+                <viewController id="vgJ-l5-sRx" customClass="DisplayViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1mz-4V-1mN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHr-J1-tdV">
+                                <rect key="frame" x="10" y="98" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.89352054199999997" green="0.53925371499999997" blue="0.78324409969999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CnB-3J-fMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tLE-qj-QpJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IHr-J1-tdV" firstAttribute="top" secondItem="tLE-qj-QpJ" secondAttribute="top" constant="10" id="9tp-B7-iJe"/>
+                            <constraint firstItem="tLE-qj-QpJ" firstAttribute="trailing" secondItem="IHr-J1-tdV" secondAttribute="trailing" constant="10" id="Hhc-IA-P9Y"/>
+                            <constraint firstItem="IHr-J1-tdV" firstAttribute="leading" secondItem="tLE-qj-QpJ" secondAttribute="leading" constant="10" id="ThD-06-3QO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gUx-jE-WzZ"/>
+                    <connections>
+                        <outlet property="titleTextLabel" destination="IHr-J1-tdV" id="JJ3-HV-hl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAN-wa-qK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2299" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dgO-FC-ZKw">
