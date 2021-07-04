@@ -28,7 +28,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noteArray.count
@@ -93,7 +92,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             inputViewController.note = note
         }
     }
-    
     
     // 入力画面から戻ってきた時に TableView を更新させる
     override func viewWillAppear(_ animated: Bool) {
